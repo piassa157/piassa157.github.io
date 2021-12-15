@@ -13,7 +13,8 @@
       <pubDate>Wed, 15 Dec 2021 14:34:26 -0300</pubDate>
       
       <guid>https://piassa157.github.io/golang-post/</guid>
-      <description>Test commit automatic </description>
+      <description>Multiple request test script GitHub URL: https://github.com/piassa157/go-request-test This script running in GO if not have compiler execute this: *** Open url: https://go.dev/dl/ download GO to your OS ***
+Linux $ tar -xzf downloadfile.tar &amp;amp;&amp;amp; mv go /usr/local/ # Open with your editor ~/.profile or your path variable ambience example: $ vim ~/.profile #add export PATH=$PATH:/usr/local/go/bin export PATH=$PATH:/usr/local/go/bin $ source ~/.profile #execute test $ go version # output: go version go1.14.2 linux/amd64 Now change file data.</description>
     </item>
     
   </channel>
