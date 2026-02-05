@@ -1,692 +1,333 @@
 <!DOCTYPE html>
-<html lang="en-us"><head>
-	<meta name="generator" content="Hugo 0.90.1" />
-    <title>Gabriel G Piassa</title>
+<html lang="pt-br"><head>
+    <meta name="generator" content="Hugo 0.90.1" />
+    <title>Gabriel G Piassa - Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Gabriel Piassa Portifolio" />
+    <meta name="description" content="Gabriel Piassa - Software Developer Engineer Portfolio" />
     <style>
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 :root {
-  --cursor-visibility: hidden; }
+  --cursor-visibility: hidden;
+  --bg-color: #1b1d1e;
+  --text-color: #BBBBBB;
+  --user-color: #23E298;
+  --dir-color: #D08010;
+  --highlight-color: #61AFEF;
+  --success-color: #98C379;
+  --warning-color: #E5C07B;
+}
 
-html,
-body {
+html, body {
   width: 100%;
   height: 100%;
   overflow: auto;
   font-family: "Inconsolata", monospace;
   font-size: 4vmin;
-  line-height: 4.1vmin;
-  font-weight: normal; }
+  line-height: 4.5vmin;
+  font-weight: normal;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
 
 body {
   margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: flex-start;
+  padding: 20px;
+}
 
 #content {
   min-width: 82vmin;
-  min-height: 82vmin; }
+  max-width: 95vmin;
+  padding: 20px;
+}
 
-::-webkit-scrollbar {
-  width: 10px; }
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { border-radius: 10px; box-shadow: inset 0 0 1px white; }
+::-webkit-scrollbar-thumb { border-radius: 10px; box-shadow: 0 0 0 1px white; }
 
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-  box-shadow: inset 0 0 1px white; }
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  box-shadow: 0 0 0 1px white; }
-
-.cursor, #ps1_01:after, #cd:after, #ps1_02:after, #cat:after, #std_out_01:after, #ps1_03:after, #std_out_02:after, #ps1_04:after {
+.cursor, .typing:after {
   visibility: var(--cursor-visibility);
   content: "|";
   overflow: hidden;
   color: white;
-  animation: blink 500ms linear infinite alternate; }
+  animation: blink 500ms linear infinite alternate;
+}
 
 @keyframes blink {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 @media only screen and (min-width: 768px) {
-  body {
-    font-size: 2.5vmin;
-    line-height: 2.6vmin; }
-  #content {
-    min-width: 60vmin; } }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-
-body{background:#1b1d1e}body #terminal{color:#BBBBBB}body #user{color:#23E298}body #dir{color:#D08010}body .Typewriter__cursor{color:#BBBBBB}a{color:#BBBBBB}
-
+  body { font-size: 2.2vmin; line-height: 2.8vmin; }
+  #content { min-width: 60vmin; max-width: 80vmin; }
+}
+
+/* Terminal styling */
+.user { color: var(--user-color); font-weight: bold; }
+.dir { color: var(--dir-color); }
+.terminal { color: var(--text-color); }
+.highlight { color: var(--highlight-color); }
+.success { color: var(--success-color); }
+.warning { color: var(--warning-color); }
+
+a { color: var(--highlight-color); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.section { margin-bottom: 30px; }
+.section-title { color: var(--user-color); font-weight: bold; margin-bottom: 10px; }
+.tree-item { margin-left: 20px; }
+.tree-last { margin-left: 20px; }
+
+/* Portfolio cards */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.card {
+  border: 1px solid #444;
+  padding: 15px;
+  border-radius: 5px;
+  background: rgba(255,255,255,0.02);
+}
+
+.card-title { color: var(--highlight-color); font-weight: bold; margin-bottom: 8px; }
+.card-desc { color: var(--text-color); margin-bottom: 8px; font-size: 0.9em; }
+.card-tags { color: var(--warning-color); font-size: 0.8em; }
+.card-link { color: var(--success-color); font-size: 0.85em; }
+
+/* Experience timeline */
+.exp-item { margin-bottom: 20px; padding-left: 20px; border-left: 2px solid var(--dir-color); }
+.exp-title { color: var(--highlight-color); font-weight: bold; }
+.exp-company { color: var(--user-color); }
+.exp-date { color: var(--warning-color); font-size: 0.85em; }
+.exp-desc { color: var(--text-color); margin-top: 5px; font-size: 0.9em; }
+
+/* Skills */
+.skill-category { margin-bottom: 15px; }
+.skill-name { color: var(--dir-color); }
+.skill-items { color: var(--text-color); margin-left: 20px; }
+
+/* Certifications */
+.cert-item { margin-bottom: 10px; }
+.cert-name { color: var(--highlight-color); }
+.cert-issuer { color: var(--warning-color); font-size: 0.85em; }
 </style>
+</head>
+<body>
+<div id="content">
 
+<!-- Header / Intro -->
+<div class="section" id="intro">
+    <span class="user">Gabriel@Piassa</span><span class="terminal">:</span><span class="dir">~/portfolio</span><span class="terminal">$ cat about.txt</span>
+    <div style="margin-top: 10px;">
+        <span class="terminal">
+            Hi! I'm <span class="highlight">Gabriel Piassa</span>, a Software Developer Engineer.<br>
+            Welcome to my portfolio!<br><br>
+            <span class="dir">Location:</span> Brazil<br>
+            <span class="dir">Email:</span> <a href="mailto:seu-email@exemplo.com">seu-email@exemplo.com</a><br>
+            <span class="dir">GitHub:</span> <a href="https://github.com/piassa157" target="_blank">github.com/piassa157</a><br>
+            <span class="dir">LinkedIn:</span> <a href="https://linkedin.com/in/seu-linkedin" target="_blank">linkedin.com/in/seu-linkedin</a>
+        </span>
+    </div>
+</div>
 
+<!-- Experiences -->
+<div class="section" id="experiences">
+    <span class="user">Gabriel@Piassa</span><span class="terminal">:</span><span class="dir">~/portfolio</span><span class="terminal">$ cat experiences.json</span>
+    <div style="margin-top: 15px;">
 
-</head><body><div id="content">
-    
-    
+        <div class="exp-item">
+            <div class="exp-title">Software Developer Engineer</div>
+            <div class="exp-company">@ Nome da Empresa</div>
+            <div class="exp-date">Jan 2023 - Presente</div>
+            <div class="exp-desc">
+                - Desenvolvimento de aplicacoes backend em Go/Java<br>
+                - Implementacao de pipelines de dados<br>
+                - Arquitetura de microservicos
+            </div>
+        </div>
 
-    
-    
+        <div class="exp-item">
+            <div class="exp-title">Junior Developer</div>
+            <div class="exp-company">@ Empresa Anterior</div>
+            <div class="exp-date">Jun 2021 - Dez 2022</div>
+            <div class="exp-desc">
+                - Desenvolvimento full-stack<br>
+                - Manutencao de sistemas legados<br>
+                - Integracao com APIs externas
+            </div>
+        </div>
 
-    
-    
-    
-    
-    
-    
+        <!-- Adicione mais experiencias aqui -->
+    </div>
+</div>
 
-    
-    
-    
-    
-    
-        
-            
-            
+<!-- Skills / Data Pipeline -->
+<div class="section" id="skills">
+    <span class="user">Gabriel@Piassa</span><span class="terminal">:</span><span class="dir">~/portfolio</span><span class="terminal">$ tree ./skills/</span>
+    <div style="margin-top: 15px;">
 
-            
-            
-            
-            
-            
-            
-            
-        
-            
-            
+        <div class="skill-category">
+            <span class="dir">./languages/</span>
+            <div class="skill-items">
+                ├── Go<br>
+                ├── Java<br>
+                ├── Python<br>
+                ├── Elixir<br>
+                ├── C/C++<br>
+                └── SQL
+            </div>
+        </div>
 
-            
-            
-            
-            
-            
-            
-            
-        
-            
-            
+        <div class="skill-category">
+            <span class="dir">./data_pipeline/</span>
+            <div class="skill-items">
+                ├── Apache Kafka<br>
+                ├── Apache Spark<br>
+                ├── Apache Airflow<br>
+                ├── ETL/ELT Processes<br>
+                └── Data Modeling
+            </div>
+        </div>
 
-            
-            
-            
-                
-            
-            
-            
-            
-            
-        
-            
-            
+        <div class="skill-category">
+            <span class="dir">./devops/</span>
+            <div class="skill-items">
+                ├── Docker<br>
+                ├── Kubernetes<br>
+                ├── CI/CD<br>
+                ├── AWS/GCP<br>
+                └── Terraform
+            </div>
+        </div>
 
-            
-            
-            
-            
-            
-            
-            
-        
-            
-            
+        <div class="skill-category">
+            <span class="dir">./databases/</span>
+            <div class="skill-items">
+                ├── PostgreSQL<br>
+                ├── MongoDB<br>
+                ├── Redis<br>
+                └── Elasticsearch
+            </div>
+        </div>
 
-            
-            
-            
-            
-            
-            
-            
-        
-    
+    </div>
+</div>
 
-    
+<!-- Projects / Portfolio -->
+<div class="section" id="projects">
+    <span class="user">Gabriel@Piassa</span><span class="terminal">:</span><span class="dir">~/portfolio</span><span class="terminal">$ ls -la ./projects/</span>
+    <div class="portfolio-grid">
 
-    
+        <div class="card">
+            <div class="card-title">Multiple Request Test Script</div>
+            <div class="card-desc">Script em Go para testes de carga e performance em APIs REST. Suporta configuracao flexivel de endpoints e metricas.</div>
+            <div class="card-tags">[Go, Testing, Performance]</div>
+            <div class="card-link"><a href="https://piassa157.github.io/golang-post/" target="_blank">Ver projeto</a></div>
+        </div>
 
-    
-    
-    
+        <div class="card">
+            <div class="card-title">Data Pipeline Project</div>
+            <div class="card-desc">Pipeline de dados para processamento de eventos em tempo real usando Kafka e Spark.</div>
+            <div class="card-tags">[Python, Kafka, Spark, Docker]</div>
+            <div class="card-link"><a href="#" target="_blank">Em desenvolvimento</a></div>
+        </div>
 
-    <span id="ps1_01"></span> <span id="cd"></span> <br>
-<span id="ps1_02"></span> <span id="cat"></span> <br>
-<span id="std_out_01"></span> <br>
-<span id="ps1_03"></span> <span id="tree"></span> <br>
-<span id="std_out_02"></span> <br>
-<span id="ps1_04"></span>
+        <div class="card">
+            <div class="card-title">Microservices Architecture</div>
+            <div class="card-desc">Arquitetura de microservicos com Java Spring Boot, comunicacao via gRPC e mensageria.</div>
+            <div class="card-tags">[Java, Spring Boot, gRPC, Kubernetes]</div>
+            <div class="card-link"><a href="#" target="_blank">Em breve</a></div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">CLI Tool</div>
+            <div class="card-desc">Ferramenta de linha de comando para automacao de tarefas de desenvolvimento.</div>
+            <div class="card-tags">[Go, CLI, Automation]</div>
+            <div class="card-link"><a href="#" target="_blank">Em breve</a></div>
+        </div>
+
+        <!--
+        TEMPLATE PARA ADICIONAR NOVOS PROJETOS:
+
+        <div class="card">
+            <div class="card-title">Nome do Projeto</div>
+            <div class="card-desc">Descricao do projeto aqui.</div>
+            <div class="card-tags">[Tag1, Tag2, Tag3]</div>
+            <div class="card-link"><a href="URL" target="_blank">Ver projeto</a></div>
+        </div>
+        -->
+
+    </div>
+</div>
+
+<!-- Certifications -->
+<div class="section" id="certifications">
+    <span class="user">Gabriel@Piassa</span><span class="terminal">:</span><span class="dir">~/portfolio</span><span class="terminal">$ cat certifications.md</span>
+    <div style="margin-top: 15px;">
+
+        <div class="cert-item">
+            <span class="cert-name">AWS Certified Solutions Architect</span><br>
+            <span class="cert-issuer">Amazon Web Services - 2024</span>
+        </div>
+
+        <div class="cert-item">
+            <span class="cert-name">Kubernetes Administrator (CKA)</span><br>
+            <span class="cert-issuer">CNCF - 2023</span>
+        </div>
+
+        <div class="cert-item">
+            <span class="cert-name">Apache Kafka Certification</span><br>
+            <span class="cert-issuer">Confluent - 2023</span>
+        </div>
+
+        <!--
+        TEMPLATE PARA ADICIONAR CERTIFICACOES:
+
+        <div class="cert-item">
+            <span class="cert-name">Nome da Certificacao</span><br>
+            <span class="cert-issuer">Emissor - Ano</span>
+        </div>
+        -->
+
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="section" id="footer">
+    <span class="user">Gabriel@Piassa</span><span class="terminal">:</span><span class="dir">~/portfolio</span><span class="terminal">$ echo "Obrigado por visitar!"</span>
+    <div style="margin-top: 10px;">
+        <span class="success">Obrigado por visitar!</span><br><br>
+        <span class="terminal">
+            Entre em contato:<br>
+            <span class="dir">GitHub:</span> <a href="https://github.com/piassa157" target="_blank">piassa157</a> |
+            <span class="dir">LinkedIn:</span> <a href="https://linkedin.com/in/seu-linkedin" target="_blank">Seu LinkedIn</a> |
+            <span class="dir">Email:</span> <a href="mailto:seu-email@exemplo.com">seu-email@exemplo.com</a>
+        </span>
+    </div>
+</div>
+
+<div style="margin-top: 20px;">
+    <span class="user">Gabriel@Piassa</span><span class="terminal">:</span><span class="dir">~/portfolio</span><span class="terminal">$ <span class="typing" id="cursor"></span></span>
+</div>
 
 <script type="text/javascript">
-    async function typewriter(text, elementId, waitAfter) {
-        var n = 0,
-            isTag = false
-        addText = "";
-        const el = document.getElementById(elementId);
-
-        const wait = () => new Promise(r => setTimeout(r, waitAfter));
-        const nowait = () => new Promise(r => r());
-
-        const render = () => el.innerHTML = (text.slice(0, n + 1) + addText);
-
-        const cursor = document.createElement('span');
-        cursor.id = "blink";
-
-        el.style.setProperty("--cursor-visibility", "visible");
-        while (n < text.length) {
-            if (text.charAt(n + 1) === "<") isTag = true;
-            if (text.charAt(n + 1) === ">") isTag = false;
-
-            if (isTag) {
-                n++;
-                continue;
-            }
-
-            requestAnimationFrame(render);
-
-            if (waitAfter === 0) {
-                await nowait();
-            } else {
-                await wait();
-            }
-
-            n++;
-        }
-        el.style.setProperty("--cursor-visibility", "collapse");
-    }
-
-    function parseDelay(d) {
-        const parsed = parseInt(d, 10);
-        if (isNaN(parsed)) return 0;
-        return parsed;
-    }
-
-    const ps1Delay = parseDelay("0"),
-        stdoutDelay = parseDelay("0"),
-        commandDelay = parseDelay("50");
-    const typeeffetct = async () => {
-        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003eGabriel@Piassa\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_01", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003ecd myPorfile\u003c\/span\u003e", "cd", commandDelay);
-        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003eGabriel@Piassa\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/myPorfile\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_02", ps1Delay); await typewriter("\u003cspan id=terminal\u003ecat profile.go\u003c\/span\u003e", "cat", commandDelay);
-        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e    💻 Hi I am Gabriel Piassa a Software Developer Engineer!\u003cbr\u003e    👋 Nice to meet you!\u003cbr\u003e\u003cbr\u003e    🟢 Check my posts! Click in tools to see.  \n  \u003c\/span\u003e", "std_out_01", stdoutDelay);
-        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003eGabriel@Piassa\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/myPorfile\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_03", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003etree .\/my_activity\/\u003c\/span\u003e", "tree", commandDelay);
-        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cstrong\u003e\u003cspan id=\u0027dir\u0027\u003e.\/my_activity\/\u003c\/span\u003e\u003c\/strong\u003e\u003cbr\u003e├── \u003ca href=\u0027\/post\/c-post.md\u0027\u003eC\/C\u002b\u002b\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027\/posts\/elixir-post.md\u0027\u003eElixir\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027https:\/\/piassa157.github.io\/golang-post\/\u0027\u003eGo\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027\/posts\/java-mcs.md\u0027\u003eJava\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e└── \u003ca href=\u0027\/posts\/docker-k8s-java.md\u0027\u003eDocker\u003c\/a\u003e\u003c\/span\u003e", "std_out_02", stdoutDelay);
-        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003eGabriel@Piassa\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/myPorfile\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_04", ps1Delay);
-        return;
-    }
-
-    typeeffetct()
+// Cursor blinking effect
+document.getElementById('cursor').style.setProperty("--cursor-visibility", "visible");
 </script>
 
-
-        </div></body>
+</div>
+</body>
 </html>
